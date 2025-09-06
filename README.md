@@ -59,3 +59,53 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+📌 Descrição Técnica do Projeto – Laravel + React
+
+Este projeto demonstra a integração entre Laravel (backend) e React (frontend), aplicando o conceito de separação de responsabilidades em uma arquitetura moderna de aplicações web.
+
+🔹 Backend – Laravel
+
+Implementado em Laravel 10, atuando como API RESTful.
+
+Gerencia rotas, autenticação e regras de negócio.
+
+Estrutura de controllers e models que fornecem dados em formato JSON para o frontend.
+
+Organização do código para facilitar escalabilidade e manutenção.
+
+🔹 Frontend – React
+
+Desenvolvido em React 18.
+
+Consome os endpoints fornecidos pela API Laravel através de requisições HTTP (Axios/Fetch).
+
+Estrutura de componentes funcionais, seguindo boas práticas de reutilização.
+
+Integração com rotas internas (React Router) e controle de estado.
+
+🔹 Comunicação API
+
+O React acessa dados do Laravel via chamadas REST (ex.: /api/users, /api/login).
+
+Respostas sempre em JSON, garantindo compatibilidade com SPAs.
+
+Suporte a CORS configurado no Laravel para permitir a comunicação entre domínios diferentes (ex.: frontend em localhost:3000 e backend em localhost:8000).
+
+🔹 Fluxo de Desenvolvimento
+
+Durante o desenvolvimento, frontend e backend rodam em servidores distintos:
+
+Laravel → php artisan serve em localhost:8000.
+
+React → servidor de desenvolvimento (npm run dev) em localhost:3000.
+
+Em produção, o build do React pode ser servido pelo Laravel ou hospedado separadamente.
+
+🔹 Tecnologias Utilizadas
+
+Backend: PHP 8+, Laravel 10, Eloquent ORM, API REST.
+
+Frontend: React 18, Axios, React Router, Vite.
+
+Ferramentas: Node.js, Composer, GitHub.
